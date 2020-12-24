@@ -1,0 +1,115 @@
+{%  extends "aplicacion/mastertemplate/masterpage.html" %}
+
+{% block title %} kampepen {% endblock %}
+
+{% block content %}
+<section class="header5 cid-rXN5vadPbU mbr-fullscreen" id="header5-4">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="mbr-white col-md-10">
+                <!-- Aqui puedes editar -->
+               
+                <h1 class="mbr-section-title align-center pb-3 mbr-fonts-style display-1">¿Quienés Somós?</h1>
+                {% for inicio in ver %}
+                <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style" >{{inicio.quien}}</p>
+                {% endfor %}
+                <!-- Aqui termina -->
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
+
+<section class="mbr-section content6 cid-rYemKpn2JJ" id="content6-a">
+    
+     
+    
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                 <!-- Aqui editas -->
+                 {% for imagen1 in ver%}
+                    <div class="mbr-figure" style="width: 60%;">
+                        
+                      <img src="{{ imagen1.foto1.url }}" alt="Kampepen" title="Misión">  
+                        
+                    </div>
+                 {% endfor %}
+                    <div class="media-content">
+                        {% for mision in ver %}
+                        <div class="mbr-section-text">
+                            <p class="mbr-text mb-0 mbr-fonts-style display-7"><strong>Misión</strong><br>{{ mision.mision }} <br></p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- Aqui terminas -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content7 cid-rYemLr8lM5" id="content7-b">
+          
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12 col-md-8">
+                <div class="media-container-row">
+                    <div class="media-content">
+                    <!-- Aqui puedes editar -->
+                   {% for vision in ver %}
+                        <div class="mbr-section-text">
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">
+            <strong>Visión</strong><strong><br></strong> {{ vision.vision }} </p>
+                        </div>
+                    {% endfor %}
+                    <!-- Aqui terminas -->    
+                    </div>
+                    {% for imagen2 in ver %}
+                    <div class="mbr-figure" style="width: 60%;">
+                     <img src="{{ imagen2.foto2.url }}" alt="Mobirise" title="" height="500px" width="500px">  
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content11 cid-rYfJuKRuRw" id="content11-d">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <h1>Valores corporativos</h1>
+                    <br>
+                    <li><strong>Honestidad</strong> - Actuar con transparencia logrando ganar una mayor confianza con nuestros clientes, colaboradores y comunidad. </li>
+                    <li><strong>Compromiso</strong> - Estamos comprometidos con el medio ambiente y nuestro etorno para la generación de trabajo y sustentabilidad, trabajando a diario para el mejoramiento continuo.</li>
+                    <li><strong>Generosidad</strong>&nbsp;- Brindar de la mejor manera nuestras riquezas usando de manera racional los recursos de la empresa.</li>
+                    <li><strong>Innovación</strong>&nbsp;- Nos caracterizamos por trabajar de una manera diferente, única e inigualable, ya que nos atrevemos a hacer cosas que nadie ha hecho antes.</li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+ 

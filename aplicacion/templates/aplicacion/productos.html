@@ -1,0 +1,55 @@
+{% extends "aplicacion/mastertemplate/masterpage.html" %}
+
+{% block title %} Productos {% endblock %}
+
+{% block content %}
+
+
+<section class="services1 cid-rYlB2VW8pD" id="services1-y">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                <h2 class="align-left pb-3 mbr-fonts-style display-1">Nuestra Tienda</h2>
+
+              {% for productos in products %} 
+                
+            </div>
+            <!--Card-1-->
+            <div class="card col-12 col-md-6 p-3 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="{{ productos.imagen.url }}" alt="Kampepen">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            {{ productos.nombre }}
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           {{ productos.descripsión }}
+                        </p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left">
+                            <a href="https://mobirise.co" class="btn btn-warning-outline display-4">
+                                {{ productos.presió }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+           
+            <!--Card-2-->
+            
+            <!--Card-4-->
+            
+        </div>
+    </div>
+</section>
+{% endblock %}
