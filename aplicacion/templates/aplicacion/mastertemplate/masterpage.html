@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
   <link rel="preload" as="style" href="{% static 'assets/mobirise/css/mbr-additional.css' %}">
   <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 
   
   
@@ -84,10 +85,11 @@
         </div>
     </nav>
 </section>
-{% block content %}
 <a class='appWhatsapp' target='_blanck' href='https://api.whatsapp.com/send?phone=9991419851&text=¡Hola!&nbsp;¿Me&nbsp;podrían&nbsp;ayudar?.'>  
     <img src="{% static 'assets/images/whatsapp.png' %}"> 
 </a>
+{% block content %}
+
 {% endblock %}
 
 
