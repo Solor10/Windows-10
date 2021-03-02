@@ -88,6 +88,31 @@
 <a class='appWhatsapp' target='_blanck' href='https://api.whatsapp.com/send?phone=9991419851&text=¡Hola!&nbsp;¿Me&nbsp;podrían&nbsp;ayudar?.'>  
     <img src="{% static 'assets/images/whatsapp.png' %}"> 
 </a>
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="1104788102878360"
+  logged_in_greeting="¡Hola! ¿Cómo te podemos ayudar?."
+  logged_out_greeting="¡Hola! ¿Cómo te podemos ayudar?.">
+      </div>
 {% block content %}
 
 {% endblock %}

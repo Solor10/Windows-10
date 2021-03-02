@@ -28,4 +28,5 @@ def view_proyectos(request):
     return render(request, 'aplicacion/proyectos.html')
 
 
+
 # Create your views here.

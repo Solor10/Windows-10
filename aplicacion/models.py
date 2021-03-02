@@ -10,9 +10,6 @@ class Modelo_Inicio(models.Model):
     foto2 = models.ImageField(upload_to='img/inicio')
 
 
-    
-    
-
 
 class Modelo_Productos(models.Model):
     
