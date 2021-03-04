@@ -12,5 +12,10 @@ class AdminInicio(admin.ModelAdmin):
 @admin.register(models.Modelo_Productos)
 class AdminProductos(admin.ModelAdmin):
     list_display = ( 'imagen', 'nombre', 'descripsión', 'presió')
+
+
+@admin.register(models.Modelo_Proyecto)
+class AdminProyecto(admin.ModelAdmin):
+    list_display = ( 'titulo')
     
 
