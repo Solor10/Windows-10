@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from aplicacion.models import Modelo_Inicio,  Modelo_Productos
+from aplicacion.models import Modelo_Inicio, Modelo_Productos, Modelo_Proyecto
 
 
 def view_inicio(request):
@@ -24,8 +24,9 @@ def view_productos(request):
     return render(request, 'aplicacion/productos.html', datos)
 
 def view_proyectos(request):
-
-    return render(request, 'aplicacion/proyectos.html')
+    proyec = Modelo_Proyecto.objects.all()
+    datos = {'pro': proyec}
+    return render(request, 'aplicacion/proyectos.html', datos)
 
 
 
