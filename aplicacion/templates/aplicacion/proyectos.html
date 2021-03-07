@@ -16,7 +16,7 @@
 {% for proyectos in pro %}
              
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
-                <br>
+                            <br>
                             <br>
                             <br>
                     Proyecto {{proyectos.id}}: {{ proyectos.titulo }}
@@ -100,7 +100,7 @@
     <div class="container">
             <div class="media-container-row" style="width: 66%;">
                 <div class="img-item item1" style="width: 179%;">
-                    <img src="{{ proyectos.imagen_1.url }}" title="Proyecto de Tilapias">
+                    <img src="{{ proyectos.imagen_1.url }}" title="{{ proyectos.titulo }}">
                     <div class="img-caption">
                         <p class="mbr-fonts-style align-center mbr-black display-7">
                             {{ proyectos.imagen_suptitulo_1 }}
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="img-item">
-                    <img src="{{ proyectos.imagen_2.url }}" title="Proyecto de Tilapias">
+                    <img src="{{ proyectos.imagen_2.url }}" title="{{ proyextos.titulo }}">
                     <div class="img-caption">
                         <p class="mbr-fonts-style align-center mbr-black display-7">
                             {{ proyectos.imagen_suptitulo_2 }}
