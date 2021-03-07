@@ -2,6 +2,7 @@
 {% block title %}  Proyectos {% endblock %}
  
 {% block content %}
+{% for proyectos in pro %}
 <section class="engine"></section><section class="mbr-section content4 cid-s4tXOt2iWc" id="content4-16">
 
     <div class="container">
@@ -12,12 +13,12 @@
                     Proyectos
                    
                 </h2>
-                {% for proyectos in pro %}
+             
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
                     {{ proyectos.titulo }}
                     
                 </h3>
-                {% endfor %}
+                
             </div>
         </div>
     </div>
@@ -31,7 +32,7 @@
         <div class="inner-container" style="width: 66%;">
             <hr class="line" style="width: 25%;">
 
-            {% for proyectos in pro %}
+            
             <div class="section-text align-center mbr-white mbr-fonts-style display-5">
             {{ proyectos.informacion }}
              <br>
@@ -40,7 +41,6 @@
             
             </div>
 
-            {% endfor %}
             <hr class="line" style="width: 25%;">
         </div>
     </div>
@@ -49,7 +49,7 @@
 
 <section class="mbr-section article content11 cid-s4tYwo4ymg" id="content11-19">
      
-    {% for proyectos in pro %}
+    
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
@@ -70,12 +70,12 @@
             </div>
         </div>
     </div>
-    {% endfor %}
+  
 </section>
 
 <section class="mbr-section article content10 cid-s4tYIEVs5c" id="content10-1a">
     
-     {% for proyectos in pro %}
+   
 
     <div class="container">
         <div class="inner-container" style="width: 66%;">
@@ -87,12 +87,12 @@
             <hr class="line" style="width: 25%;">
         </div>
     </div>
-     {% endfor %}
+ 
 </section>
 
 <section class="cid-s4tZx3rcJc" id="content13-1d">
     
-    {% for proyectos in pro %}
+    
     <div class="container">
             <div class="media-container-row" style="width: 66%;">
                 <div class="img-item item1" style="width: 179%;">
@@ -114,6 +114,7 @@
                 </div>
             </div>
     </div>
-    {% endfor %}
+   
 </section>
+ {% endfor %}
 {% endblock %}
