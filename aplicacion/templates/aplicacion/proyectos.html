@@ -2,7 +2,7 @@
 {% block title %}  Proyectos {% endblock %}
  
 {% block content %}
-{% for proyectos in pro %}
+
 <section class="engine"></section><section class="mbr-section content4 cid-s4tXOt2iWc" id="content4-16">
 
     <div class="container">
@@ -13,6 +13,7 @@
                     Proyectos
                    
                 </h2>
+{% for proyectos in pro %}
              
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
                     {{ proyectos.titulo }}
@@ -114,7 +115,6 @@
                 </div>
             </div>
     </div>
-   
+{% endfor %}
 </section>
- {% endfor %}
 {% endblock %}
